@@ -45,3 +45,11 @@ You should see this same information.
 ## Submitting your project
 
 Send us a zip file of the whole project for us to evaluate it.  If you need to add any additional instructions to the README please put them at the very top of that file and mention.  Expect to discuss your design decisions during the interview.
+
+## Project details
+
+The tenant needs to send the api_key in the request headers otherwise it will return a `bad request`.
+A tenant can only send 100 requets per day after that he needs to wait for 10 seconds before each request.
+
+A tenant can hit the /questions url which will return all the public questions.
+It can also send the name of the asker in the query parameters which will return all the questions related to a particular asker.
